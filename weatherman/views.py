@@ -6,10 +6,10 @@ def index(request):
     city = 'New Delhi'
     city_weather = requests.get(url.format(city)).json() #request the API data and convert the JSON to Python data types
     weather = {
-        'city' = city,
-        'temperature' = city_weather['main']['temp'],
-        'description' = city_weather['weather'][0]['description'],
-        'icon' = city_weather['weather'][0]['icon']
+        'city' : city,
+        'temperature' : city_weather['main']['temp'],
+        'description' : city_weather['weather'][0]['description'],
+        'icon' : city_weather['weather'][0]['icon']
     }
     context = {'weather' : weather}
     return render(request,'weatherman/index.html', context)
