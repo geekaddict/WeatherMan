@@ -1,3 +1,3 @@
-# weatherapp
+# Weatherman
 Weatherman - a weather app
 
